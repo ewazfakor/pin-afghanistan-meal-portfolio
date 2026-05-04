@@ -1,0 +1,28 @@
+list_name,name,label::English (en),label::Dari (fa)
+yes_no,yes,Yes,بلی
+yes_no,no,No,نخیر
+district,malistan,Malistan,مالستان
+district,ajristan,Ajristan,اجرستان
+village,KRM,Karamul,کرمل
+village,SRP,Sorkh Parsa,سرخ پارسا
+village,SHK,Shinkai,شینکی
+village,DHB,Deh-e-Bala,ده بالا
+village,KRD,Khordak,خوردک
+village,NWZ,Nawroz,نوروز
+village,BAR,Barai,برای
+village,SKZ,Sar-e-Karez,سر کارز
+village,QML,Qala-e-Mullah,قلعه ملا
+village,SPD,Spedar,سپیدار
+village,IKH,Ibrahim Khail,ابراهیم خیل
+gender,male,Male,مرد
+gender,female,Female,زن
+idp_status,idp,Internally Displaced Person (IDP),بیجاشده داخلی
+idp_status,returnee,Returnee,بازگشت‌کننده
+idp_status,host,Host Community,میزبان
+seed_variety,local,Local Variety,واریته محلی
+seed_variety,improved,Improved Variety,واریته بهبودیافته
+seed_variety,drought_resistant,Drought-Resistant,مقاوم به خشکی
+input_type,Wheat_Kit,Wheat Seed + Fertilizer Kit,بذر گندم + کیت کود
+input_type,Garden_Kit,Kitchen Garden Kit,کیت باغچه آشپزخانه
+input_type,Poultry_KG,Poultry Kit,کیت طیور
+input_type,Small_Ruminant_KG,Small Ruminant Kit,کیت مواشی کوچک

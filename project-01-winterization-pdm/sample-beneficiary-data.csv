@@ -1,0 +1,21 @@
+Beneficiary_ID,District,Village,HH_Head_Name,Gender_HH_Head,Family_Size,CNIC_Number,Phone_Number,Vulnerability_Score,Registration_Date,Cash_Amount_USD,Distribution_Date,Payment_Method,Receipt_Confirmed,Verification_Status,PDM_Survey_Date,Satisfaction_Score,Cash_Used_Intended,Safe_Access_Female
+WCA-MLT-001,Malistan,Karamul,Ahmad Shah,Male,8,12345678901,0701234567,7.2,2022-10-15,331,2022-11-03,Mobile Money,Yes,Verified,2022-12-10,4,Yes,Yes
+WCA-MLT-002,Malistan,Karamul,Fatima Bibi,Female,5,12345678902,0701234568,8.5,2022-10-16,331,2022-11-03,Mobile Money,Yes,Verified,2022-12-10,5,Yes,Yes
+WCA-MLT-003,Malistan,Sorkh Parsa,Mohammad Ali,Male,10,12345678903,0701234569,6.8,2022-10-17,331,2022-11-05,Mobile Money,Yes,Verified,2022-12-12,4,Yes,Yes
+WCA-MLT-004,Malistan,Sorkh Parsa,Zahra Jan,Female,4,12345678904,0701234570,9.1,2022-10-18,331,2022-11-05,Mobile Money,Yes,Verified,2022-12-12,5,Yes,Yes
+WCA-MLT-005,Malistan,Shinkai,Hassan Khan,Male,7,12345678905,0701234571,7.5,2022-10-19,331,2022-11-07,Mobile Money,Yes,Verified,2022-12-14,4,Yes,Yes
+WCA-MLT-006,Malistan,Shinkai,Maryam Bibi,Female,6,12345678906,0701234572,8.0,2022-10-20,331,2022-11-07,Mobile Money,Yes,Verified,2022-12-14,5,Yes,Yes
+WCA-MLT-007,Malistan,Deh-e-Bala,Ahmad Zia,Male,9,12345678907,0701234573,6.5,2022-10-21,331,2022-11-08,Mobile Money,Yes,Verified,2022-12-15,3,Yes,Yes
+WCA-MLT-008,Malistan,Deh-e-Bala,Sakina Bibi,Female,5,12345678908,0701234574,8.3,2022-10-22,331,2022-11-08,Mobile Money,Yes,Verified,2022-12-15,5,Yes,Yes
+WCA-MLT-009,Malistan,Khordak,Akbar Khan,Male,11,12345678909,0701234575,7.0,2022-10-23,331,2022-11-10,Mobile Money,Yes,Verified,2022-12-17,4,Yes,Yes
+WCA-MLT-010,Malistan,Khordak,Razia Bibi,Female,4,12345678910,0701234576,9.2,2022-10-24,331,2022-11-10,Mobile Money,Yes,Verified,2022-12-17,5,Yes,Yes
+WCA-JGT-001,Jaghatu,Nawroz,Mohammad Rahim,Male,6,12345679001,0701234577,7.8,2022-10-25,331,2022-11-12,Mobile Money,Yes,Verified,2022-12-19,4,Yes,Yes
+WCA-JGT-002,Jaghatu,Nawroz,Zahra Jan,Female,5,12345679002,0701234578,8.4,2022-10-26,331,2022-11-12,Mobile Money,Yes,Verified,2022-12-19,5,Yes,Yes
+WCA-JGT-003,Jaghatu,Barai,Ahmad Shah,Male,8,12345679003,0701234579,6.9,2022-10-27,331,2022-11-14,Mobile Money,Yes,Verified,2022-12-21,4,Yes,Yes
+WCA-JGT-004,Jaghatu,Barai,Fatima Bibi,Female,7,12345679004,0701234580,8.7,2022-10-28,331,2022-11-14,Mobile Money,Yes,Verified,2022-12-21,5,Yes,Yes
+WCA-JGT-005,Jaghatu,Sar-e-Karez,Mohammad Ali,Male,10,12345679005,0701234581,7.1,2022-10-29,331,2022-11-15,Mobile Money,Yes,Verified,2022-12-22,4,Yes,Yes
+WCA-JGT-006,Jaghatu,Sar-e-Karez,Maryam Bibi,Female,6,12345679006,0701234582,8.5,2022-10-30,331,2022-11-15,Mobile Money,Yes,Verified,2022-12-22,5,Yes,Yes
+WCA-JGT-007,Jaghatu,Qala-e-Mullah,Hassan Khan,Male,9,12345679007,0701234583,7.3,2022-10-31,331,2022-11-17,Mobile Money,Yes,Verified,2022-12-24,4,Yes,Yes
+WCA-JGT-008,Jaghatu,Qala-e-Mullah,Sakina Bibi,Female,5,12345679008,0701234584,8.8,2022-11-01,331,2022-11-17,Mobile Money,Yes,Verified,2022-12-24,5,Yes,Yes
+WCA-JGT-009,Jaghatu,Spedar,Ahmad Zia,Male,7,12345679009,0701234585,6.7,2022-11-02,331,2022-11-18,Mobile Money,Yes,Verified,2022-12-25,4,Yes,Yes
+WCA-JGT-010,Jaghatu,Spedar,Razia Bibi,Female,4,12345679010,0701234586,9.0,2022-11-03,331,2022-11-18,Mobile Money,Yes,Verified,2022-12-25,5,Yes,Yes

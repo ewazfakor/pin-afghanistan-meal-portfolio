@@ -1,0 +1,2 @@
+form_id,form_title,version,instance_name,default_language,style,allow_choice_duplicates
+AGRI_REGISTRATION_2023,Agricultural Beneficiary Registration Form,v1.2,concat('AGR_', ${district}, '_', ${village}, '_', ${hh_head_name}),en,pages,no

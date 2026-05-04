@@ -1,0 +1,49 @@
+type,name,label::English (en),label::Dari (fa),hint::English (en),required,relevant,constraint,constraint_message,calculation,appearance
+begin_group,grp_consent,Informed Consent,رضایت آگاهانه,,,,,,,
+select_one yes_no,consent_given,Do you agree to participate in this survey?,آیا با شرکت در این نظرسنجی موافقید?,,yes,,,,,
+end_group,grp_consent,,,,,,,,,
+begin_group,grp_location,Location Information,اطلاعات موقعیت,,yes,${consent_given} = 'yes',,,,
+select_one district,district,District,ولسوالی,,yes,,,,,minimal
+select_one village,village,Village,قریه,,yes,,cascading filter based on district,,,minimal
+deviceid,enumerator_id,Enumerator ID,شناسهEnumerator,,yes,,,,,
+start,survey_start_time,Survey Start Time,زمان شروع نظرسنجی,,yes,,,,,
+geopoint,hh_gps,Household GPS Coordinates,مختصات جغرافیایی خانوار,Ensure GPS accuracy <10m,yes,,accuracy <= 10,GPS accuracy must be within 10 meters,,maps
+end_group,grp_location,,,,,,,,,
+begin_group,grp_demographics,Household Demographics,جمعیت‌شناسی خانوار,,yes,${consent_given} = 'yes',,,,
+text,hh_head_name,Household Head Name,نام رئیس خانوار,,yes,,,,,
+text,respondent_name,Respondent Name (if different),نام پاسخ‌دهنده (در صورت تفاوت),,no,,,,,
+select_one gender,gender,Gender,جنسیت,,yes,,,,,minimal
+integer,age,Age,سن,,yes,,. >= 18 and . <= 120,Age must be between 18 and 120 years,,integer
+integer,family_size,Total Family Members,تعداد کل اعضای خانوار,,yes,,. > 0 and . < 50,Family size must be between 1 and 50,,integer
+integer,male_members,Male Members,تعداد مردان,,yes,,. >= 0 and . <= ${family_size},Cannot exceed total family size,,integer
+integer,female_members,Female Members,تعداد زنان,,yes,,. >= 0 and . <= ${family_size},Cannot exceed total family size,,integer
+integer,children_members,Children (under 18),تعداد اطفال (زیر ۱۸ سال),,yes,,. >= 0 and . <= ${family_size},Cannot exceed total family size,,integer
+calculate,total_check,Total Check,بررسی جمع,,yes,,,,. = ${male_members} + ${female_members} + ${children_members},hidden
+note,validation_note,Note: Male + Female + Children must equal Total Family Members,توجه: جمع مردان + زنان + اطفال باید برابر با تعداد کل اعضا باشد,,yes,${total_check} != ${family_size},,,,
+end_group,grp_demographics,,,,,,,,,
+begin_group,grp_vulnerability,Vulnerability & Status,آسیب‌پذیری و وضعیت,,yes,${consent_given} = 'yes',,,,
+select_one idp_status,idp_returnee_host_status,Household Status,وضعیت خانوار,,yes,,,,,minimal
+integer,vulnerability_score,Vulnerability Score (0-10),نمره آسیب‌پذیری (۰-۱۰),PIN internal criteria,yes,,. >= 0 and . <= 10,Score must be between 0 and 10,,integer
+integer,priority_rank,Priority Rank in Community List,رتبه اولویت در لیست جامعه,,yes,,. > 0 and . <= 500,Rank must be between 1 and 500,,integer
+end_group,grp_vulnerability,,,,,,,,,
+begin_group,grp_contact,Contact Information,اطلاعات تماس,,yes,${consent_given} = 'yes',,,,
+text,phone_number,Phone Number,شماره تلفن,,yes,,regex(., '^07[0-9]{8}$'),Phone number must be a valid Afghan mobile number starting with 07,,tel
+text,alt_phone_number,Alternative Phone Number,شماره تلفن جایگزین,,no,,regex(., '^07[0-9]{8}$'),Phone number must be a valid Afghan mobile number starting with 07,,tel
+end_group,grp_contact,,,,,,,,,
+begin_group,grp_photo,Photo Documentation,مستندات تصویری,,yes,${consent_given} = 'yes',,,,
+image,photo_hh_head,Photo of Household Head,عکس رئیس خانوار,Ensure face is clearly visible,yes,,,,,signature
+image,photo_id_card,Photo of ID Card,عکس تذکره,Ensure ID number is readable,yes,,,,,signature
+calculate,photo_file_name,Photo File Name,,,,,,,concat(${village}, '_', ${input_type}, '_', format-date(today(), '%y%m%d'), '_', ${beneficiary_id}, '_001'),hidden
+end_group,grp_photo,,,,,,,,,
+begin_group,grp_agriculture,Agricultural Information,اطلاعات زراعتی,,yes,${consent_given} = 'yes' and ${input_type} = 'Wheat_Kit',,,,
+select_one yes_no,owns_land,Do you own agricultural land?,آیا زمین زراعتی دارید؟,,yes,,,,,minimal
+decimal,land_size_hectares,Land Size (hectares),مساحت زمین (هکتار),,yes,${owns_land} = 'yes',. > 0 and . <= 50,Land size must be between 0.1 and 50 hectares,,decimal
+select_one seed_variety,seed_variety_preference,Preferred Seed Variety,واریته ترجیحی بذر,,yes,,,,,minimal
+select_one yes_no,received_fertilizer_before,Have you received fertilizer before?,آیا قبلاً کود دریافت کرده‌اید؟,,yes,,,,,minimal
+end_group,grp_agriculture,,,,,,,,,
+begin_group,grp_livestock,Livestock Information,اطلاعات مواشی,,yes,${consent_given} = 'yes' and ${input_type} = 'Poultry_KG',,,,
+integer,current_poultry_count,Current Poultry Count,تعداد فعلی طیور,,yes,,. >= 0,Cannot be negative,,integer
+select_one yes_no,has_shelter,Do you have adequate poultry shelter?,آیا پناهگاه مناسب برای طیور دارید؟,,yes,,,,,minimal
+select_one yes_no,access_vet_services,Do you have access to veterinary services?,آیا به خدمات دامپزشکی دسترسی دارید؟,,yes,,,,,minimal
+end_group,grp_livestock,,,,,,,,,
+end,final_note,Thank you for your participation. Your information will be kept confidential.,از مشارکت شما سپاسگزاریم. اطلاعات شما محرمانه خواهد ماند.,,,,,,,,
