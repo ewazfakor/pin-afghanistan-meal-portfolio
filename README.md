@@ -93,7 +93,7 @@ All projects are documented with **professional structure**, **dashboard designs
 
 | **Credential** | **Institution** | **Year** | **Relevance** |
 |:---------------|:----------------|:---------|:--------------|
-| Bachelor's Degree | [Your University] | 20XX | Foundation in research methods and statistics |
+| Bachelor's Degree | Kabul Polytechnic University | 2017 | Bachelor in Urban and Social Development |
 | MEAL in Humanitarian Action | [Training Provider, if any] | 2023 | Structured approach to DQA and indicator design |
 | Data Analysis with Power BI | [Platform, if any] | 2024 | Dashboard design and DAX measures |
 | Protection from Sexual Exploitation & Abuse (PSEA) | PIN Internal | 2022 | Mandatory for all PIN staff |
@@ -102,11 +102,11 @@ All projects are documented with **professional structure**, **dashboard designs
 
 ## Contact
 
-**[Your Full Name]**  
+**Ewaz Fakor**  
 MEAL Officer | People in Need (PIN) Afghanistan  
-Email: [your.email@example.com]  
-LinkedIn: [linkedin.com/in/yourprofile]  
-GitHub: [github.com/yourusername]
+Email: ewazfakor@gmail.com  
+LinkedIn: linkedin.com/in/ewazfakor  
+GitHub: github.com/ewazfakor
 
 ---
 
@@ -155,4 +155,4 @@ It may **not** be used for:
 
 ---
 
-*Last updated: 2025-01-15*
+*Last updated: 2026-04-04*
